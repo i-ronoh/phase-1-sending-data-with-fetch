@@ -13,8 +13,8 @@ function submitData (name, email) {
         }) ,
     })
     .then( (response)=>response.json())
-    .then(function (funny) {
-        return document.body.innerHTML = funny["id"]
+    .then(function (object) {
+        return document.body.innerHTML = object["id"]
         })
         .catch(function (error) {
         alert(error.message);
